@@ -1,0 +1,32 @@
+{
+  "name": "@g-duff/ticket-tycoon",
+  "version": "0.0.0",
+  "description": "Ticket tracking tomfoolery",
+  "keywords": [
+    "jira",
+    "metrics"
+  ],
+  "homepage": "https://github.com/g-duff/ticket-tycoon#readme",
+  "bugs": {
+    "url": "https://github.com/g-duff/ticket-tycoon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-duff/ticket-tycoon.git"
+  },
+  "license": "MIT",
+  "author": "Dr G Duffett",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist/* && node ./esbuild.config.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^24.13.3",
+    "esbuild": "^0.28.1",
+    "typescript": "^5.9.3"
+  }
+}

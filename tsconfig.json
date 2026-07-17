@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "paths" : {
+      "src/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": ["node_modules"],
+}
