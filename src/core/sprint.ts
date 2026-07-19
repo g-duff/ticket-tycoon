@@ -1,17 +1,12 @@
-interface Metrics {
-  cycleTime: number
-  leadTime: number
-  completion: number
-  scopeChange: number
-  carryOver: number
-}
+import type { Metrics } from "src/core/model"
+
 
 export const sprint = (days: number): Metrics => {
   return {
-    cycleTime: 5,
-    leadTime: 36,
-    completion: 0.8,
-    scopeChange: 15,
-    carryOver: 0.2,
+    averageCycleTime: 5,
+    averageLeadTime: 36,
+    completionPercentage: 0.8,
+    scopeChangePercentage: 0.15,
+    carryOverPercentage: 0.2
   }
 }
