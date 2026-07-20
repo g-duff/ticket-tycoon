@@ -13,22 +13,20 @@ export const doWork = (capacity: Capacity, workItems: WorkItems): WorkItems =>  
   return {...workItems, stories};
 }
 
-
 const doStories = (stories: Story[], storyCapacity: number): Story[] => {
   if (storyCapacity == 0) return stories;
 
   const currentStory = stories.shift();
   if (!currentStory) return []
 
-  const readyForWork = (currentStory.status != "Done") && currentStory.daysRemaining > 0;
 
-  if (readyForWork) {
-    const daysRemaining = currentStory.daysRemaining - 1;
-
-    const status: StoryStatus = daysRemaining == 0 ? "Done": "In Progress"
-    const workedOnStory = { ...currentStory, daysRemaining, status }
-    return [workedOnStory, ...doStories(stories, storyCapacity - 1)]
-  } else {
+  if (currentStory.status == "Done") {
     return [currentStory, ...doStories(stories, storyCapacity)]
   }
+
+  const daysRemaining = currentStory.daysRemaining - 1;
+
+  const status: StoryStatus = daysRemaining == 0 ? "Done": "In Progress"
+  const workedOnStory = { ...currentStory, daysRemaining, status }
+  return [workedOnStory, ...doStories(stories, storyCapacity - 1)]
 }
