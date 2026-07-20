@@ -1,21 +1,14 @@
-import { Optional } from "src/types"
-
-
 export interface Story {
   status: StoryStatus
   points: number
   daysRemaining: number
-  history: StoryEvent[]
+  history: StoryStatusChange[]
 }
 
 export type StoryStatus = "To Do" | "In Progress" | "Done"
 
-export interface StoryEvent {
+export interface StoryStatusChange {
   date: number
-  statusChange: Optional<StoryStatusChange>
-}
-
-interface StoryStatusChange {
   fromStatus: StoryStatus
   toStatus: StoryStatus
 }
