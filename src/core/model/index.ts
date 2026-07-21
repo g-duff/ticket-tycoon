@@ -18,4 +18,4 @@ export interface WorkItems {
 
 export type { Story };
 export type { StoryStatus } from "src/core/model/story";
-export type { StoryEvent } from "src/core/model/story";
+export type { StoryStatusChange } from "src/core/model/story";
