@@ -5,7 +5,7 @@ esbuild
   .build({
     entryPoints: ["src/index.ts"],
     bundle: true,
-    outdir: 'dist',
+    outdir: "dist",
     minify: false,
     format: "esm",
     platform: "node",
@@ -13,6 +13,6 @@ esbuild
     // Fix for https://github.com/evanw/esbuild/pull/2067
     banner: {
       js: "import { createRequire } from 'module'; const require = createRequire(import.meta.url);",
-    }
+    },
   })
   .catch(() => exit(1));
