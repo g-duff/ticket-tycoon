@@ -1,2 +1,1 @@
-export const createMetrics = () => {
-}
+export const createMetrics = () => {};

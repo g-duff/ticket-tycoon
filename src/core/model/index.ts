@@ -1,19 +1,19 @@
 import type { Story } from "src/core/model/story";
 
 export interface Metrics {
-  averageCycleTime: number
-  averageLeadTime: number
-  completionPercentage: number
-  scopeChangePercentage: number
-  carryOverPercentage: number
+  averageCycleTime: number;
+  averageLeadTime: number;
+  completionPercentage: number;
+  scopeChangePercentage: number;
+  carryOverPercentage: number;
 }
 
 export interface Capacity {
-  forStories: number
+  forStories: number;
 }
 
 export interface WorkItems {
-  stories: Story[]
+  stories: Story[];
 }
 
 export type { Story };
