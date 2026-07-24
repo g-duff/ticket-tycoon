@@ -3,9 +3,9 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "paths": {
-      "src/*": ["./src/*"]
+      "@src/*": ["./src/*"]
     }
   },
-  "include": ["./src/**/*.ts"],
+  "include": ["./src/**/*.ts", "./test/**/*.ts"],
   "exclude": ["node_modules"]
 }
