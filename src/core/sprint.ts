@@ -1,11 +1,14 @@
-// import type { Metrics } from "src/core/model"
+import type { WorkItems, Capacity } from "@src/core/model";
+import { doWork } from "@src/core/do-work";
 
-// export const sprint = (days: number): Metrics => {
-//   return {
-//     averageCycleTime: 5,
-//     averageLeadTime: 36,
-//     completionPercentage: 0.8,
-//     scopeChangePercentage: 0.15,
-//     carryOverPercentage: 0.2
-//   }
-// }
+export const sprint = (
+  date: number,
+  days: number,
+  capacity: Capacity,
+  workItems: WorkItems,
+): WorkItems => {
+  for (let d = 0; d < days; d++) {
+    workItems = doWork(capacity, date + d, workItems);
+  }
+  return workItems;
+};
