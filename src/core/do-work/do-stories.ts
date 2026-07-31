@@ -1,22 +1,6 @@
-import type { Capacity, WorkItems, Story, StoryStatus } from "src/core/model";
+import type { Story, StoryStatus } from "@src/core/model";
 
-// TODO apply capacity to reduce daysRemaining on workItems to none
-// So ...
-//  * split the work items into those to do?
-//  	- a hidden, natural WIP limit
-//  * reduce those with days remaining by one?
-//  * Check status updates
-//  * Form the complete list again and return it
-export const doWork = (
-  onDate: number,
-  capacity: Capacity,
-  workItems: WorkItems,
-): WorkItems => {
-  const stories = doStories(onDate, workItems.stories, capacity.forStories);
-  return { ...workItems, stories };
-};
-
-const doStories = (
+export const doStories = (
   onDate: number,
   stories: Story[],
   storyCapacity: number,

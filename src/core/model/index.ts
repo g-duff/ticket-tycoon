@@ -1,4 +1,4 @@
-import type { Story } from "src/core/model/story";
+import type { Story } from "@src/core/model/story";
 
 export interface Metrics {
   averageCycleTime: number;
@@ -17,5 +17,5 @@ export interface WorkItems {
 }
 
 export type { Story };
-export type { StoryStatus } from "src/core/model/story";
-export type { StoryStatusChange } from "src/core/model/story";
+export type { StoryStatus } from "@src/core/model/story";
+export type { StoryStatusChange } from "@src/core/model/story";
