@@ -1,9 +1,7 @@
 import type { WorkItems, Story } from "@src/core/model";
 
 export const createMetrics = (workItems: WorkItems): Record<string, number> => {
-  return {
-    completion: completion(workItems.stories),
-  };
+  return completion(workItems.stories);
 };
 
 const completion = (stories: Story[]) => {
@@ -12,5 +10,9 @@ const completion = (stories: Story[]) => {
     return c;
   }, 0);
   const totalCount = stories.length;
-  return doneCount / totalCount;
+  return {
+    done: doneCount,
+    total: totalCount,
+    completion: doneCount / totalCount,
+  };
 };
