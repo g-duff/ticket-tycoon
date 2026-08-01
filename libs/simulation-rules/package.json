@@ -1,0 +1,16 @@
+{
+  "name": "@ticket-tycoon/simulation-rules",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-duff/ticket-tycoon.git"
+  },
+  "license": "MIT",
+  "author": "Dr G Duffett",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {},
+  "dependencies": {
+    "@types/node": "^26.1.2"
+  }
+}
