@@ -25,18 +25,8 @@ describe("misc", () => {
     const capacity: Capacity = { forStories: 4 };
     const workItems: WorkItems = {
       stories: [
-        {
-          status: "To Do",
-          points: 3,
-          daysRemaining: 3,
-          history: [],
-        },
-        {
-          status: "To Do",
-          points: 3,
-          daysRemaining: 3,
-          history: [],
-        },
+        { status: "To Do", points: 3, daysRemaining: 3, history: [] },
+        { status: "To Do", points: 3, daysRemaining: 3, history: [] },
       ],
     };
 
@@ -57,30 +47,10 @@ describe("misc", () => {
     const capacity: Capacity = { forStories: 2 };
     const workItems: WorkItems = {
       stories: [
-        {
-          status: "To Do",
-          points: 7,
-          daysRemaining: 7,
-          history: [],
-        },
-        {
-          status: "To Do",
-          points: 7,
-          daysRemaining: 7,
-          history: [],
-        },
-        {
-          status: "To Do",
-          points: 10,
-          daysRemaining: 10,
-          history: [],
-        },
-        {
-          status: "To Do",
-          points: 10,
-          daysRemaining: 10,
-          history: [],
-        },
+        { status: "To Do", points: 7, daysRemaining: 7, history: [] },
+        { status: "To Do", points: 7, daysRemaining: 7, history: [] },
+        { status: "To Do", points: 10, daysRemaining: 10, history: [] },
+        { status: "To Do", points: 10, daysRemaining: 10, history: [] },
       ],
     };
 
@@ -101,30 +71,10 @@ describe("misc", () => {
     const capacity: Capacity = { forStories: 2 };
     const workItems: WorkItems = {
       stories: [
-        {
-          status: "To Do",
-          points: 12,
-          daysRemaining: 12,
-          history: [],
-        },
-        {
-          status: "To Do",
-          points: 12,
-          daysRemaining: 12,
-          history: [],
-        },
-        {
-          status: "To Do",
-          points: 12,
-          daysRemaining: 12,
-          history: [],
-        },
-        {
-          status: "To Do",
-          points: 12,
-          daysRemaining: 12,
-          history: [],
-        },
+        { status: "To Do", points: 12, daysRemaining: 12, history: [] },
+        { status: "To Do", points: 12, daysRemaining: 12, history: [] },
+        { status: "To Do", points: 12, daysRemaining: 12, history: [] },
+        { status: "To Do", points: 12, daysRemaining: 12, history: [] },
       ],
     };
 
