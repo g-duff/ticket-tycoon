@@ -1,0 +1,23 @@
+{
+  "name": "ticket-tycoon",
+  "description": "Ticket Tracking Tomfoolery",
+  "homepage": "https://github.com/g-duff/ticket-tycoon#readme",
+  "workspaces": [
+    "apps/*",
+    "libs*"
+  ],
+  "bugs": {
+    "url": "https://github.com/g-duff/ticket-tycoon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-duff/ticket-tycoon.git"
+  },
+  "license": "MIT",
+  "author": "Dr G Duffett",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
