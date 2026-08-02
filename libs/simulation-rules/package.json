@@ -10,7 +10,8 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-	  "test": "vitest run"
+    "fmt": "prettier . --write",
+    "test": "vitest run"
   },
   "dependencies": {
     "@types/node": "^26.1.2"
